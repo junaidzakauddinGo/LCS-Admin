@@ -1,1 +1,2 @@
 # LCS-Admin
+readme file
