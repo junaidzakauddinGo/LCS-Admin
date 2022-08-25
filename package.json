@@ -1,0 +1,29 @@
+{
+  "name": "lcs-admin",
+  "version": "1.0.0",
+  "description": "readme file",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js -f json:cucumber-report.json",
+    "report": "node report.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junaidzakauddinGo/LCS-Admin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junaidzakauddinGo/LCS-Admin/issues"
+  },
+  "homepage": "https://github.com/junaidzakauddinGo/LCS-Admin#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^5.5.0",
+    "puppeteer": "^16.2.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.5.1"
+  }
+}

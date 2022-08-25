@@ -1,0 +1,74 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Create User",
+    "line": 1,
+    "id": "create-user",
+    "tags": [],
+    "uri": "features/newUserCreation.feature",
+    "elements": [
+      {
+        "id": "create-user;verify-adding-user-to-users-table",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify adding user to Users table",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The browser is open",
+            "match": {
+              "location": "features/newUserCreationSteps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1215000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "open the URL and login",
+            "match": {
+              "location": "features/newUserCreationSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2753000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "add User",
+            "match": {
+              "location": "features/newUserCreationSteps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3281000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User must be created under users table",
+            "match": {
+              "location": "features/newUserCreationSteps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
