@@ -25,7 +25,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1215000000
+              "duration": 1227000000
             }
           },
           {
@@ -34,11 +34,11 @@
             "line": 6,
             "name": "open the URL and login",
             "match": {
-              "location": "features/newUserCreationSteps.js:16"
+              "location": "features/newUserCreationSteps.js:17"
             },
             "result": {
               "status": "passed",
-              "duration": 2753000000
+              "duration": 1621000000
             }
           },
           {
@@ -47,11 +47,11 @@
             "line": 7,
             "name": "add User",
             "match": {
-              "location": "features/newUserCreationSteps.js:25"
+              "location": "features/newUserCreationSteps.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 3281000000
+              "duration": 1703000000
             }
           },
           {
@@ -64,7 +64,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1144000000
             }
           }
         ]

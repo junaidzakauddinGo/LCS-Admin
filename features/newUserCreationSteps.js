@@ -1,9 +1,9 @@
 const {When, Then, And, Given} = require("cucumber")
-const expect = require("chai")
+const chai = require("chai")
 const puppeteer = require("puppeteer")
-const userName = "test"
-const userEmail = "abc@test.com"
-const userRole= "randomRole"
+const userName = "LCS"
+const userEmail = "LCS@test.com"
+const userRole= "randomRole1234"
 
 var {setDefaultTimeout} = require('cucumber');
 setDefaultTimeout(60 * 1000);
@@ -11,6 +11,7 @@ setDefaultTimeout(60 * 1000);
 Given("The browser is open", async function(){
     this.browser = await puppeteer.launch({headless:false})
     this.page = await this.browser.newPage();
+    await this.page.setViewport({ width: 1366, height: 768});
 })
 
 When('open the URL and login', async function () {
@@ -32,9 +33,15 @@ When('add User', async function () {
     await this.page.type("#userRole",userRole)
 
     await this.page.click('.btn-primary')
-    
 });
 
 Then('User must be created under users table', async function () {
-    
+
+    await this.page.waitForSelector("tbody tr:nth-child(1) td:nth-child(2)")
+
+    const element = await this.page.$eval('tbody tr:nth-child(1) td:nth-child(2)', el => el.textContent);
+
+    await chai.expect(element).to.include(userName)
+
+    await this.browser.close()
 });
